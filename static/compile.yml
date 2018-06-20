@@ -1,0 +1,20 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: ubuntu
+
+params:
+  POM_PATH:
+
+inputs:
+  - name: project
+  - name: build
+
+outputs:
+  - name: compile-out
+
+run:
+  path: build/static/compile-exe.sh

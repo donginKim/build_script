@@ -1,0 +1,19 @@
+ptform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: maven
+
+params:
+  POM_PATH:
+  
+inputs:
+  - name: project
+  - name: build
+  
+outputs:
+  - name: compile-out
+
+run:
+  path: build/java/compile-exe.sh
