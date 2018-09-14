@@ -94,7 +94,7 @@ public class FrontController {
 
 	@PostConstruct
 	private void postConstruct() {
-//		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> user/password: " + name + "/" + password);
+		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> user/password: " + name + "/" + password);
 	}
 
 }
