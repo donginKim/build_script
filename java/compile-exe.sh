@@ -2,12 +2,6 @@
 
 # compileing
 
-ls
-
-cd project
-
-ls
-
 cd ../
 
 if [ $type = "compile" ]; then
