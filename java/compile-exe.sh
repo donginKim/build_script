@@ -2,6 +2,8 @@
 
 # compileing
 
+ls
+
 
 if [ $type = "compile" ]; then
 
