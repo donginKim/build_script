@@ -2,44 +2,45 @@
 
 # compileing
 
-if [ $type = "compile" ]; then
+ls
 
-#	if [ -e "project/build" ]; then
-#        cd project
-#    	./build
-#        ls
-#    fi
+cd project
+
+ls
+
+cd ../
+
+if [ $type = "compile" ]; then
     
     if [ -e "project/build.gradle" ]; then
         echo "[INFO] Project is gradle ===== > Install gradle"
         add-apt-repository ppa:cwchien/gradle
-       apt-get update
+        apt-get update
         apt-get install gradle -y
         echo "[INFO] Project is gradle ===== > gradle build"
        #gradle build
         if [ -e "project/gradlew" ]; then
+        
             cd project
             ./gradlew build
-            cd ../
-            
+            cd ../            
             cp -v project/build/libs/*.jar compile-out/compile.jar
 
         else
+
             cd project
             gradle clean jar
             if [ "$?" -ne 0 ]; then
                 echo "[INFO] Gradle build Failed"
                 exit 1
             fi
-
             cd ../
-
             cp -v project/build/libs/*.jar compile-out/compile.jar
-
             echo "[INFO] Gradle build successed"
         fi
 
     elif [ -e "project/pom.xml" ]; then
+    
         echo "[INFO] Project is maven ===== > Install Maven"
         apt-get install maven
         cd project
@@ -52,15 +53,14 @@ if [ $type = "compile" ]; then
         fi
         
         cd ../
-
         cp -v project/target/*.jar compile-out/compile.jar
-
         echo "[INFO] Maven build successed"
         
     else
       
       echo "[Error]"
-      #exit 1
+      
+      exit 1
       
     fi
 
