@@ -6,9 +6,12 @@ ls
 
 cd project
 
+git remote -v
+
 ls
 
 cd ../
+
 
 if [ $type = "compile" ]; then
     
