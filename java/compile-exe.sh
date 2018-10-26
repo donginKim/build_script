@@ -2,8 +2,6 @@
 
 # compileing
 
-cd ../
-
 if [ $type = "compile" ]; then
 
 #	if [ -e "project/build" ]; then
