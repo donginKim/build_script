@@ -4,7 +4,7 @@
 
 ls
 
-cd complie-out
+cd compile-out
 
 ls
 
