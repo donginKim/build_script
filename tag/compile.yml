@@ -12,9 +12,10 @@ params:
 inputs:
   - name: project
   - name: build
-  
-outputs:
   - name: compile-out
+  
+#outputs:
+#  - name: compile-out
 
 run:
   path: build/tag/compile-exe.sh
