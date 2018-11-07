@@ -4,6 +4,14 @@
 
 ls
 
+cd complie-out
+
+ls
+
+cd ../
+
+ls
+
 cd project
 
 ls
