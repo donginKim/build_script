@@ -11,7 +11,7 @@ ls
 git remote -v
 
 git remote remove origin
-git remote add origin http://sudouser:sudouser@52.231.161.92:3000/$repo.git
+git remote add origin http://sudouser:sudouser@$uri/$repo.git
 
 git tag $tag
 
