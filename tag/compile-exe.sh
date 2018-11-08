@@ -4,6 +4,14 @@
 
 ls
 
+cd compile-out
+
+ls
+
+cd ../
+
+ls
+
 cd project
 
 ls
