@@ -7,6 +7,7 @@ image_resource:
   source:
     repository: 192.168.0.162:5000/steve1145/complier
     tag: latest
+    insecure_registries: [ "192.168.0.162:5000" ]
     
 inputs:
   - name: project
