@@ -6,6 +6,7 @@ image_resource:
   privileged: true
   source:
     repository: localhost:5000/steve1145/complier
+    tag: latest
     
 inputs:
   - name: project
