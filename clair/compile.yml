@@ -5,9 +5,10 @@ image_resource:
   type: docker-image
   privileged: true
   source:
-    repository: 192.168.0.162:5000/steve1145/complier
-    insecure_registries: [ "192.168.0.162:5000" ]
+    repository: "192.168.0.162:5000/steve1145/complier"
     tag: klar
+    insecure_registries: [ "192.168.0.162:5000" ]
+    
 
 #inputs:
 #  - name: project
