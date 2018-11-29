@@ -2,8 +2,10 @@ ptform: linux
 
 image_resource:
   type: docker-image
+  privileged: true
   source:
-    repository: maven
+    repository: localhost:5000/steve1145/complier
+    tag: latest
 
 params:
   POM_PATH:
