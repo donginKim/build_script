@@ -3,11 +3,10 @@ platform: linux
 
 image_resource:
   type: docker-image
+  privileged: true
   source:
-    repository: ubuntu
-
-params:
-  POM_PATH:
+    repository: localhost:5000/steve1145/complier
+    tag: latest
 
 inputs:
   - name: project
