@@ -1,19 +1,4 @@
 #!/bin/bash
-
-# compileing
-
-ls
-
-cd project
-
-git remote -v
-
-ls
-
-cd ../
-
-
-if [ $type = "compile" ]; then
     
     if [ -e "project/build.gradle" ]; then
         echo "[INFO] Project is gradle ===== > Install gradle"
@@ -67,11 +52,7 @@ if [ $type = "compile" ]; then
       
     fi
 
-fi
-
 # testing
-
-if [ $type = "debug" ]; then
 
     if [ -e "project/build.gradle" ]; then
         echo "[DEBUG] Project is gradle ===== > Install gradle"
@@ -118,4 +99,3 @@ if [ $type = "debug" ]; then
         echo "[INFO] Maven JUnit test Success"
 
     fi
-fi
