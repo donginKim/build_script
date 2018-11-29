@@ -1,0 +1,19 @@
+---
+platform: linux
+
+image_resource:
+  type: docker-image
+  privileged: true
+  source:
+    repository: localhost:5000/steve1145/complier
+    tag: latest
+
+#inputs:
+#  - name: project
+#  - name: build
+  
+#outputs:
+#  - name: compile-out
+
+run:
+  path: build/clair/compile-exe.sh
