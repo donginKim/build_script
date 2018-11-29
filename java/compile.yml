@@ -3,16 +3,14 @@ platform: linux
 
 image_resource:
   type: docker-image
+  privileged: true
   source:
-    repository: steve1145/debuging
-
-params:
-  POM_PATH:
-  
+    repository: localhost:5000/steve1145/complier
+    
 inputs:
   - name: project
   - name: build
-  
+
 outputs:
   - name: compile-out
 
