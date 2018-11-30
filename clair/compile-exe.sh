@@ -20,6 +20,7 @@ echo " ================= "
 ping -c 4 8.8.8.8
 echo " ================= "
 
+apt-get install docker
 
 docker pull steve1145/complier:latest
 
